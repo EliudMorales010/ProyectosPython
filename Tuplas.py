@@ -19,7 +19,7 @@ print(frutas[0:2])# Desde el indice 0 hasta el indice 2 sin contar el 2
 
 # Recorrer elementos de la tupla
 for fruta in frutas:
-    print(fruta)
+    print(fruta, end=' ')
 
 # cambiar valor de una tupla
 frutasLista = list(frutas) # list: le pasamos la tupla para convertirla en una lista
