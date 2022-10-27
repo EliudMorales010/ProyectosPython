@@ -1,48 +1,66 @@
-# Definir una lista de tipo str (string)
+# IMPORTANTE: Una lista es mutable (modificable)
+
+# Definir una lista de nombres
 nombres = ['Juan','Karla','Ricardo','Maria']
 
-# Imprimir lista de nombres
+# Imprimir una lista
 print(nombres)
 
-# Acceder a los elementos de una lista 
+# Acceder a los elementos de una lista
 print(nombres[0])
 print(nombres[1])
 
-# Acceder a los elementos de una lista de manera inversa
+# Acceder a los elementos de manera inversa
 print(nombres[-1])
 print(nombres[-2])
 
-# Imprimir un rango
+# Imprimir un rango de elementos en una lista
 print(nombres[0:2])# sin incluir el indice 2
 
-# Ir al inicio de la lista (sin incluirlo)
-print(nombres[ :3])
+# Ir desde el inicio de la lista hasta el indice (sin incluirlo)
+print(nombres[:3])
 
-# Desde el indice indicado hasta el final
+# Ir desde el indice indicado hasta el final
 print(nombres[1:])
 
-# Cambiar un valor
-nombres[3] = "Ivone"
+# Cambiar un valor de la lista
+nombres[3] = 'Ivone'
 print(nombres)
 
-# Iterar o recorrer una lista
+# Iterar una lista
 for nombre in nombres:
     print(nombre)
 else:
-    print("No existen mas nombres en la lista")
+    print('No existen mas nombres en la lista')
 
-# Eliminar un indice
-del nombres[0]
+# Preguntar el largo de una lista
+print(len(nombres))# devuelve la cantidad de elementos de la lista
+
+# Agregar un elemento a la lista
+nombres.append('Lorenzo')
 print(nombres)
 
-# Remover el ultimo indice agregado
+# Insertar un elemento en un indice en especifico
+nombres.insert(1,'Octavio')
+print(nombres)
+
+# remover un elemento de la lista
+nombres.remove('Octavio')
+print(nombres)
+
+#remover le ultimo elemento agregado
 nombres.pop()
 print(nombres)
 
-# Limpiar una lista
+# Eliminar un elemento en un indice indicado
+del nombres[0]
+print(nombres)
+
+# Limpiar la lista
 nombres.clear()
 print(nombres)
 
-# Borrar lista por completo
+# Eliminar la lista por completo
 del nombres
 print(nombres)
+
